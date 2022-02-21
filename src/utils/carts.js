@@ -45,6 +45,8 @@ export const decreaseQuantity = (id, callback) => {
             cart = cart.filter((item) => item.id !== +id);
             toastr.success("Giảm số lượng thành công");
         }
+        // eslint-disable-next-line no-plusplus
+        currentProduct.quantity++;
     }
     setLocalStorage("cart", cart);
     callback();
