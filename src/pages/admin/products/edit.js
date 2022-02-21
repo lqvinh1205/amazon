@@ -54,7 +54,7 @@ const ProductEditPage = {
                                                 <label for="about" class="block text-sm font-medium text-gray-700">
                                                 Price
                                                 </label>
-                                                <input type="text" id="priceProduct" value="${data.priceProduct}"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                <input type="number" id="priceProduct" value="${data.priceProduct}"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                             <div class="mt-1">
                                                 <label for="about" class="block text-sm font-medium text-gray-700">

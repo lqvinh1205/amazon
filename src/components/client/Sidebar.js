@@ -19,10 +19,9 @@ const Sidebar = {
                 <div class="siderbar-content">
                     <div class="search-sidebar">
                         <select id="sortPrice">
-                            <option selected>Open this select</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="0" selected>Tất cả</option>
+                            <option value="1">Tăng dần</option>
+                            <option value="2">Giảm dần</option>
                         </select>
                     </div>
                 </div>
