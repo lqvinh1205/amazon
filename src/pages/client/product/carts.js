@@ -160,13 +160,11 @@ const CartsPage = {
                 } else if (btn.classList.contains("btn-group-item-dec")) {
                     decreaseQuantity(id, () => {
                         reRender(CartsPage, "app");
-                        toastr.success("Giảm số lượng thành công");
                     });
                 } else {
                     console.log(id);
                     removeProduct(id, () => {
                         reRender(CartsPage, "app");
-                        toastr.success("Đã xóa thành công");
                     });
                 }
             });

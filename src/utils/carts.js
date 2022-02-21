@@ -1,3 +1,4 @@
+import toastr from "toastr";
 import { getLocalStorage, setLocalStorage } from ".";
 
 let cart = [];
@@ -21,29 +22,30 @@ export const increaseQuatity = (id, callback) => {
     setLocalStorage("cart", cart);
     callback();
 };
+
+export const removeProduct = (id, callback) => {
+    const confirm = window.confirm("Bạn có muốn xóa sản phẩm?");
+    if (confirm) {
+        // eslint-disable-next-line eqeqeq
+        cart = cart.filter((item) => item.id !== +id);
+        toastr.success("Đã xóa thành công");
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    callback();
+};
 export const decreaseQuantity = (id, callback) => {
     const currentProduct = cart.find((item) => item.id === +id);
     // eslint-disable-next-line no-plusplus
     currentProduct.quantity--;
     if (currentProduct.quantity < 1) {
-        const confirm = window.confirm("Bạn có muốn xóa sản phẩm không");
-        console.log(confirm);
+        const confirm = window.confirm("Bạn có muốn xóa sản phẩm?");
+        console.log(id);
         if (confirm) {
+            // eslint-disable-next-line eqeqeq
             cart = cart.filter((item) => item.id !== +id);
+            toastr.success("Giảm số lượng thành công");
         }
     }
     setLocalStorage("cart", cart);
     callback();
-};
-
-export const removeProduct = (id, callback) => {
-    const confirm = window.confirm("Bạn có muốn xóa sản phẩm?");
-    console.log(id);
-    if (confirm) {
-        // eslint-disable-next-line eqeqeq
-        cart = cart.filter((item) => item.id != +id);
-        console.log(cart);
-        callback();
-    }
-    setLocalStorage("cart", cart);
 };

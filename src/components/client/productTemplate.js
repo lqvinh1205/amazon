@@ -1,10 +1,7 @@
-import { getAll } from "../../api/products";
-
-const ListProducts = {
-    async render() {
-        const { data } = await getAll();
+const ProductsTemplate = {
+    async render(arrProduct) {
         return /* html */`<div class='active'>
-                ${data.map((product) => /* html */`
+                ${arrProduct.map((product) => /* html */`
                 <div class='category-items'>
                     <a href="/#/products/${product.id}">
                         <h2 class='list-pro-title overflow-hidden'>${product.nameProduct}</h2>
@@ -19,4 +16,4 @@ const ListProducts = {
     },
 
 };
-export default ListProducts;
+export default ProductsTemplate;

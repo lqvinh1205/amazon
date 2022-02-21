@@ -12,6 +12,8 @@
 }
 .siderbar-content {
     font-size: 17px;
+    display: flex;
+    justify-content: center;
 }
 
 .siderbar-content ul li {
@@ -21,4 +23,33 @@
     background-color: #232f3e;
     border-radius: 5px;
     color: #fff;
+}
+.search-sidebar {
+    box-shadow: 1px 1px 3px 3px #acacac;
+    border: 1px solid #dddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+}
+.search-sidebar .search {
+    border: 1px solid #000;
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.search-sidebar button {
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    background: orange;
+    padding: 3px;
+
+}
+.search-sidebar input {
+    padding: 3px;
+
+    border-radius: 5px 0 0 5px;
+
+    width: 90%;
 }

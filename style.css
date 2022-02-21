@@ -9,4 +9,5 @@
 @import "./src/css/detailPro.css"; */
 .error {
     color: red;
+    font-size: 12px;
  }

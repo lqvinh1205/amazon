@@ -1,7 +1,18 @@
+// import { searchLike } from "../../api/search";
+
 const Sidebar = {
     render() {
         return /* html */ `
             <div class="sidebar-wrapper">
+                <div class="sidebar-title">
+                    <h4>Search</h4>
+                </div>
+                <div class="siderbar-content">
+                    <div class="search-sidebar">
+                        <input id="value_search" type="search" />
+                        <button id="btn-searchValue"><i class="fab fa-sistrix"></i></button>
+                    </div>
+                </div>
                 <div class="sidebar-title">
                     <h4>Category</h4>
                 </div>
@@ -26,5 +37,6 @@ const Sidebar = {
             <div></div>
         `;
     },
+
 };
 export default Sidebar;
