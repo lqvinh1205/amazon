@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: #0F1111;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: #ffffff;
+
+}
+.logoHeader{
+    overflow: hidden;
+    width: 120px;
+}
+.logoHeader img{
+    margin-top: -20px;
+    height: 100px;
+    width: 113px;
+    transform: scale(1.15);
+}
+.deliver {
+    display: grid;
+    grid-template-columns: 15px 70px;
+    align-items: center;
+    text-align: start;
+    gap: 2px;
+    padding-left: 5px;
+    padding: 0 6px;
+}
+.deliver div:nth-child(1) {
+    margin-top: 10px;
+}
+.deliver div:nth-child(2) p:nth-child(1){
+    color: #cccccc;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.deliver div:nth-child(2) p:nth-child(2){
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+}
+.search {
+    display: grid;
+    grid-template-columns: 52px 750px 45px;
+    padding: 10px 4px;
+    font-size: 14px;
+}
+.search label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px 0px 0px 5px;
+    background: #f3f3f3;
+    color: #5d5d5d;
+    border: none;
+    border-right: 1px solid #333333;
+}
+.search button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0px 5px 5px 0px;
+    background: #f5b665;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+.search input {
+    border: none;
+}
+
+.flag {
+    display: flex;
+     width: auto;
+     height: 55px;
+     padding-top: 25px;
+     margin-left: 15px;
+}
+.flag img{
+    width: 24px;
+    height: 18px;
+}
+.flag i{
+    color: #a7acb2;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+
+.signin {
+    width: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.signin p:nth-child(1){
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+}
+.signin i,
+.returns i{
+    font-size: 12px;
+    line-height: 14px;
+    color: #a7acb2;
+}
+.signin p:nth-child(2){
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+}
+.returns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.returns p:nth-child(1){
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+}
+.returns p:nth-child(2){
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart a{
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-bottom: -10px;
+}
+.cart-number {
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e68305;
+}
+.cart i {
+    font-size: 30px;
+    line-height: 44px;
+
+}
+.cart a p {
+    margin-bottom: -15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar {
+    background: #232f3e;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.menu {
+    width: calc(5% -10px);
+    border: 1px solid red;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.menu:hover {
+    border: 1px solid #fff;
+}
+.menu i, .menu span {
+    transform: scale(1.3);
+    font-weight: bold;
+}
+.navigation {
+    width: 84%;
+
+}
+.navbar div:nth-child(3) {
+    width: calc(11% = 10px);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.navbar div:nth-child(3):hover {
+    border: 1px solid #fff;
+
+}
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+  
+}
+.navigation ul li {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+.navigation ul li:hover {
+    border: 1px solid #fff;
+}

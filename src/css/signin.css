@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.signin-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    box-shadow: 0px 1px 5px 1px rgb(158, 158, 158);
+    padding-bottom: 2%;
+
+}
+.box-signin {
+    width:24%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+.box-signin-img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.box-signin-img img{
+    height: 50px;
+}
+.box-signin-content  {
+    border: 1px solid #dddd;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+.box-signin-content h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+.box-signin-content label {
+    font-size: 13px;
+    font-weight: bold;
+}
+.box-signin-content input {
+    width: 100%;
+    border: 1PX solid #707070;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+.box-signin-content button {
+    width: 100%;
+    border: 1PX solid orange;
+    background-color: #f2cb69;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    font-size: 13px;
+}
+
+.box-signin-content p{
+    /* width: 100%; */
+    font-size: 12px;
+    padding: 15px 0;
+}
+.box-signin-content span {
+    font-size: 13px;
+    color: #1a76c6;
+
+}
+.box-signin-content input {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.box-signin-content p a{
+    color: #1a76c6;
+}
+.box-signin-content p a:hover,
+.box-signin-content span:hover{
+    text-decoration: underline;
+}
+.text-new {
+    font-size: 12px;
+    color: #767676;
+    padding: 25px 0 13px 0;
+}
+.btn-create {
+    width: 24%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.btn-create button {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(56, 55, 55);
+    background-color: #e9eaec;
+
+
+}
+
+.footer-sign {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 1%;
+}
+.ul-footer1 li{
+    font-size: 12px;
+    color: #1a76c6;
+}
+.ul-footer2 li{
+    font-size: 12px;
+    color: #000;
+}
+.footer-sign ul {
+    display: flex;
+    gap: 20px;
+}
+.footer-sign ul li {
+    list-style: none;
+    width: auto;
+}
+.footer-sign ul li:hover {
+    text-decoration: underline;
+} 
+.text-signup {
+    padding: 0 !important;
+    font-size: 13px !important;
+}
+.box-text-signup {
+    padding: 20px 0;
+}

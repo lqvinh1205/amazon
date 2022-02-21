@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.sell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.topsell {
+    background: #fff;
+    /* height: 280px; */
+    padding: 0 20px;
+
+}
+.topsell-title {
+    padding: 20px 0;
+    padding-bottom: 10px;
+    text-align: start;
+    font-weight: bold;
+
+}
+.topsell-img{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.topsell-img img{
+    display: block;
+    padding: 40px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .swiper-button-next::after,
+.swiper-button-prev::after {
+    padding: 5px;
+    height: 70px;
+    width: 40px;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #0000;
+} */

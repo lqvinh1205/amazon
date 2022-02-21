@@ -1,0 +1,24 @@
+.sidebar-wrapper {
+    height: auto;
+    position: sticky;
+    top: 0;
+}
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #dddd;
+    margin-bottom: 10px;
+}
+.siderbar-content {
+    font-size: 17px;
+}
+
+.siderbar-content ul li {
+    padding: 6px 10px;
+}
+.siderbar-content ul li:hover {
+    background-color: #232f3e;
+    border-radius: 5px;
+    color: #fff;
+}
