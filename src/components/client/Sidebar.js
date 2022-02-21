@@ -1,7 +1,10 @@
 // import { searchLike } from "../../api/search";
 
+import { getAll } from "../../api/categories";
+
 const Sidebar = {
-    render() {
+    async render() {
+        const { data } = await getAll();
         return /* html */ `
             <div class="sidebar-wrapper">
                 <div class="sidebar-title">
@@ -30,16 +33,9 @@ const Sidebar = {
                 </div>
                 <div class="siderbar-content">
                     <ul>
-                        <li><a>Climate Pledge Friendly</a></li>
-                        <li><a>Audio & Video Accessories</a></li>
-                        <li><a>Cable Security Devices</a></li>
-                        <li><a>Computer Cable Adapters</a></li>
-                        <li><a>Keyboards, Mice & Accessories</a></li>
-                        <li><a>Monitor Accessories</a></li>
-                        <li><a>Scanner Accessories</a></li>
-                        <li><a>Uninterruptible Power Supply (UPS)</a></li>
-                        <li><a>USB Hubs</a></li>
-                        <li><a>Video Projector Accessories</a></li>
+                        ${data.map((cate) => `
+                            <li><a>${cate.nameCategory}</a></li>
+                        `).join("")}
                     </ul>
                 </div>
 

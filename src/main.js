@@ -1,4 +1,7 @@
 import Navigo from "navigo";
+import CategoryPages from "./pages/admin/category";
+import CateAddPage from "./pages/admin/category/add";
+import CateEditPage from "./pages/admin/category/edit";
 import AdminDashboard from "./pages/admin/dashboard";
 import NewsPage from "./pages/admin/news";
 import NewAddPage from "./pages/admin/news/add";
@@ -46,9 +49,9 @@ router.on({
     "/admin/news": () => printf(NewsPage),
     "/admin/news/add": () => printf(NewAddPage),
     "/admin/news/:id/edit": ({ data }) => printf(NewEditPage, data.id),
-    "/admin/categories": () => printf(NewsPage),
-    "/admin/categories/add": () => printf(NewAddPage),
-    "/admin/categories/:id/edit": ({ data }) => printf(NewEditPage, data.id),
+    "/admin/categories": () => printf(CategoryPages),
+    "/admin/categories/add": () => printf(CateAddPage),
+    "/admin/categories/:id/edit": ({ data }) => printf(CateEditPage, data.id),
     "/admin/products": () => printf(ProductsPage),
     "/admin/products/add": () => printf(ProductAddPage),
     "/admin/products/:id/edit": ({ data }) => printf(ProductEditPage, data.id),

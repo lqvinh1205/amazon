@@ -169,5 +169,47 @@
       "username": "member",
       "id": 2
     }
+  ],
+  "categories": [
+    {
+      "nameCategory": "Climate Pledge Friendly",
+      "id": 1
+    },
+    {
+      "nameCategory": "Audio & Video Accessories",
+      "id": 2
+    },
+    {
+      "nameCategory": "Cable Security Devices",
+      "id": 3
+    },
+    {
+      "nameCategory": "Computer Cable Adapters",
+      "id": 4
+    },
+    {
+      "nameCategory": "Keyboards, Mice & Accessories",
+      "id": 5
+    },
+    {
+      "nameCategory": "Monitor Accessories",
+      "id": 6
+    },
+    {
+      "nameCategory": "Scanner Accessories",
+      "id": 7
+    },
+    {
+      "nameCategory": "Uninterruptible Power Supply (UPS)",
+      "id": 8
+    },
+    {
+      "nameCategory": "USB Hubs",
+      "id": 9
+    },
+    {
+      "nameCategory": "Home & Kitchen",
+      "id": 10
+    }
   ]
 }

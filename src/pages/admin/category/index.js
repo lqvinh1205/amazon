@@ -1,9 +1,10 @@
 import toastr from "toastr";
 
 import "toastr/build/toastr.min.css";
-import { getAll, remove } from "../../../api/posts";
+import { getAll, remove } from "../../../api/categories";
 import Navbar from "../../../components/admin/navbar";
 import Footer from "../../../components/client/Footer";
+import { reRender } from "../../../utils";
 
 const CategoryPages = {
     async render() {
@@ -33,28 +34,17 @@ const CategoryPages = {
                                     STT
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Title
+                                    Name Category
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Image
-                                </th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Created
-                                </th>
-                                <th scope="col-2" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    
                                 </th>
                                 <th scope="col-2" class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-green-700">
-                                    
-                                    <a href="/#/admin/news/add"><button class="w-full h-full text-white">Add</button></a>
+                                    <a href="/#/admin/categories/add"><button class="w-full h-full text-white">Add</button></a>
                                 </th>
-                            
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
-                                ${data
-        .map(
-            (post, index) => /* html */ `
+                                ${data.map((cate, index) => /* html */ `
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex items-center">
@@ -64,37 +54,19 @@ const CategoryPages = {
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-gray-900">
-                                                ${post.title}
+                                                ${cate.nameCategory}
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <div class="flex-shrink-0 h-10 w-10">
-                                                    <img class="h-full w-full" src="${
-    post.img
-}" alt="">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm text-gray-900">${
-    post.createdAt
-}</div>
+                                      
+                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                            <a href="/#/admin/categories/${cate.id}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="/#/admin/news/${
-    post.id
-}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <button data-id=${
-    post.id
-} class="btn btn-remove text-red-600 hover:text-indigo-900">Delete</button>
+                                            <button data-id=${cate.id} class="btn btn-remove text-red-600 hover:text-indigo-900">Delete</button>
                                         </td>
                                     </tr>
-                                `,
-        )
+                                `)
         .join("")}
 
                                 <!-- More people... -->
@@ -121,6 +93,7 @@ const CategoryPages = {
                 if (confirm) {
                     remove(id).then(() => {
                         toastr.success("Bạn đã xóa thành công !");
+                        reRender(CategoryPages, "app");
                     });
                 }
             });

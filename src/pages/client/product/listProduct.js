@@ -23,7 +23,7 @@ const ListProductsPage = {
                         
                         <div class="list-products">
                             <div class="sidebar">
-                                ${Sidebar.render()}
+                                ${await Sidebar.render()}
                             </div>    
                            
                             <div id="list-product-content" class="list-product-content">
