@@ -1,5 +1,8 @@
 import axios from "axios";
 import toastr from "toastr";
+import $ from "jquery";
+// eslint-disable-next-line no-unused-vars
+import validate from "jquery-validation";
 import ProductsPage from ".";
 import { get, update } from "../../../api/products";
 import Navbar from "../../../components/admin/navbar";
@@ -51,13 +54,13 @@ const ProductEditPage = {
                                                 <label for="about" class="block text-sm font-medium text-gray-700">
                                                 Price
                                                 </label>
-                                                <input type="text" id="priceProduct" value=${data.priceProduct}  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                <input type="text" id="priceProduct" value="${data.priceProduct}"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                             <div class="mt-1">
                                                 <label for="about" class="block text-sm font-medium text-gray-700">
                                                 Quantity
                                                 </label>
-                                                <input type="text" id="quantityProduct" value=${data.quantityProduct}  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                <input type="text" id="quantityProduct"  name="quantityProduct" value="${data.quantityProduct}" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                         
                                         </div>
@@ -169,6 +172,33 @@ const ProductEditPage = {
                     reRender(ProductsPage, "app");
                 });
             }
+        });
+
+        $().ready(() => {
+            $("#form-edit-product").validate({
+                rules: {
+                    // simple rule, converted to {required:true}
+                    // nameProduct: "required",
+                    // priceProduct: "required",
+                    quantityProduct: {
+                        required: true,
+                        minlength: 5,
+                    },
+                    // descProduct: "required",
+                    // compound rule
+
+                },
+                messages: {
+                    // nameProduct: "Nhập tên sản phẩm",
+                    // priceProduct: "Mời nhập giá",
+                    quantityProduct: {
+                        required: "Mời nhập số lượng",
+                        minlength: "Mời nhập số lượng",
+                    },
+                    // descProduct: "Mời nhập mô tả",
+                },
+
+            });
         });
     },
 };
