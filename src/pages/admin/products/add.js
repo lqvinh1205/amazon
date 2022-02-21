@@ -1,5 +1,8 @@
 import axios from "axios";
 import toastr from "toastr";
+import $ from "jquery";
+// eslint-disable-next-line no-unused-vars
+import validate from "jquery-validation";
 import { add } from "../../../api/products";
 import Navbar from "../../../components/admin/navbar";
 import Footer from "../../../components/client/Footer";
@@ -37,7 +40,7 @@ const ProductAddPage = {
                                             Name product
                                             </label>
                                             <div class="mt-1">
-                                            <input type="text" id="nameProduct" placeholder="Name"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                            <input type="text" id="nameProduct" name="nameProduct" placeholder="Name"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                         
                                         </div>
@@ -47,13 +50,13 @@ const ProductAddPage = {
                                                 <label for="about" class="block text-sm font-medium text-gray-700">
                                                 Price
                                                 </label>
-                                                <input type="text" id="priceProduct" placeholder="Price"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                <input type="text" id="priceProduct" name="priceProduct" placeholder="Price"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                             <div class="mt-1">
                                                 <label for="about" class="block text-sm font-medium text-gray-700">
                                                 Quantity
                                                 </label>
-                                                <input type="text" id="quantityProduct" placeholder="Quantity"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                <input type="text" id="quantityProduct" name="quantityProduct" placeholder="Quantity"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
                                             </div>
                                         
                                         </div>
@@ -62,7 +65,7 @@ const ProductAddPage = {
                                             Description
                                             </label>
                                             <div class="mt-1">
-                                            <textarea id="descProduct" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="Description"></textarea>
+                                            <textarea id="descProduct" name="descProduct" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-3 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="Description"></textarea>
                                             </div>
                                         </div>
                             
@@ -157,6 +160,26 @@ const ProductAddPage = {
                         window.location.href = "/#/admin/products";
                     });
             }
+        });
+        $().ready(() => {
+            $("#form-add-product").validate({
+                rules: {
+                    // simple rule, converted to {required:true}
+                    nameProduct: "required",
+                    priceProduct: "required",
+                    quantityProduct: "required",
+                    descProduct: "required",
+                    // compound rule
+
+                },
+                messages: {
+                    nameProduct: "Nhập tên sản phẩm",
+                    priceProduct: "Mời nhập giá",
+                    quantityProduct: "Mời nhập số lượng",
+                    descProduct: "Mời nhập mô tả",
+                },
+
+            });
         });
     },
 };

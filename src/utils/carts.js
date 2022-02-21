@@ -40,7 +40,8 @@ export const removeProduct = (id, callback) => {
     const confirm = window.confirm("Bạn có muốn xóa sản phẩm?");
     console.log(id);
     if (confirm) {
-        cart = cart.filter((item) => item.id !== +id);
+        // eslint-disable-next-line eqeqeq
+        cart = cart.filter((item) => item.id != +id);
         console.log(cart);
         callback();
     }
