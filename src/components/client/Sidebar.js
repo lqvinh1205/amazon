@@ -14,6 +14,19 @@ const Sidebar = {
                     </div>
                 </div>
                 <div class="sidebar-title">
+                    <h4>Sort</h4>
+                </div>
+                <div class="siderbar-content">
+                    <div class="search-sidebar">
+                        <select id="sortPrice">
+                            <option selected>Open this select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sidebar-title">
                     <h4>Category</h4>
                 </div>
                 <div class="siderbar-content">

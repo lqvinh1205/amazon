@@ -22,7 +22,7 @@ const HomePage = {
     render() {
         return /* html */`
             <div>
-                <header>
+                <header id="header">
                     ${Header.render()}
                     ${Banner.render()}
                 </header>
@@ -41,6 +41,7 @@ const HomePage = {
         `;
     },
     afterRender() {
+        Header.afterRender();
         Banner.afterRender();
         TopSell.afterRender();
         ButtonSell.afterRender();

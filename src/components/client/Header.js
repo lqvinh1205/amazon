@@ -1,3 +1,8 @@
+import toastr from "toastr";
+// eslint-disable-next-line import/no-cycle
+import HomePage from "../../pages/home";
+import { reRender } from "../../utils";
+
 const Header = {
     render() {
         return /* html */`<div class="header-wrapper">
@@ -26,10 +31,18 @@ const Header = {
                         <i class="fas fa-caret-down"></i>
                     </div>
                     <div class="signin">
+                    ${localStorage.getItem("user") ? `
+                        <a id="logout">
+                            <p>Hello, <span id="name"></span></p>
+                            <p>Log out here</p>
+                        </a>
+                        ` : `
                         <a href="/#/signin">
                             <p>Hello, Sign in</p>
                             <p>Acount & Lists</p>
                         </a>
+                        
+                    `}
                     </div>
                     <div class="returns">
                         <p>Returns</p>
@@ -64,6 +77,20 @@ const Header = {
                     </div>
                 </div>
             </div>`;
+    },
+    afterRender() {
+        if (localStorage.getItem("user")) {
+            const userName = JSON.parse(localStorage.getItem("user")).username;
+            document.getElementById("name").innerHTML = userName;
+        }
+        const logout = document.querySelector("#logout");
+        if (logout) {
+            logout.addEventListener("click", () => {
+                localStorage.removeItem("user");
+                reRender(HomePage, "app");
+                toastr.success("Đăng xuất thành công");
+            });
+        }
     },
 };
 export default Header;
