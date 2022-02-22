@@ -177,7 +177,7 @@ const CartsPage = {
             const { price } = item.dataset;
             totalPrice += parseFloat(price);
         });
-        document.getElementById("toltalPrice").innerText = totalPrice;
+        document.getElementById("toltalPrice").innerText = `${totalPrice} $`;
     },
 };
 export default CartsPage;

@@ -16,13 +16,15 @@
     justify-content: center;
 }
 
-.siderbar-content ul li {
+.siderbar-content ul li{
     padding: 6px 10px;
+    width: 100%;
 }
 .siderbar-content ul li:hover {
     background-color: #232f3e;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 .search-sidebar {
     box-shadow: 1px 1px 3px 3px #acacac;

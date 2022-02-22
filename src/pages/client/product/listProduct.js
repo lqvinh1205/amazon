@@ -2,7 +2,7 @@ import Header from "../../../components/client/Header";
 import Footer from "../../../components/client/Footer";
 import ListProducts from "../../../components/client/ListPro";
 import Sidebar from "../../../components/client/Sidebar";
-import { searchLike, sortValue } from "../../../api/search";
+import { searchLike, searchValue, sortValue } from "../../../api/search";
 import ProductsTemplate from "../../../components/client/productTemplate";
 import { reRender } from "../../../utils";
 
@@ -59,6 +59,16 @@ const ListProductsPage = {
             } else {
                 reRender(ListProductsPage, "app");
             }
+        });
+
+        const btnCate = document.querySelectorAll(".btnCate");
+        btnCate.forEach((btn) => {
+            const { cate } = btn.dataset;
+            btn.addEventListener("click", async () => {
+                console.log(cate);
+                const { data } = await searchValue("products", `category=${cate}`);
+                document.getElementById("list-product-content").innerHTML = await ProductsTemplate.render(data);
+            });
         });
     },
 };

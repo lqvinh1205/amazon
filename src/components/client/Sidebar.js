@@ -1,5 +1,3 @@
-// import { searchLike } from "../../api/search";
-
 import { getAll } from "../../api/categories";
 
 const Sidebar = {
@@ -34,7 +32,7 @@ const Sidebar = {
                 <div class="siderbar-content">
                     <ul>
                         ${data.map((cate) => `
-                            <li><a>${cate.nameCategory}</a></li>
+                            <li class="btnCate" data-cate="${cate.id}"><a>${cate.nameCategory}</a></li>
                         `).join("")}
                     </ul>
                 </div>
@@ -45,6 +43,5 @@ const Sidebar = {
             <div></div>
         `;
     },
-
 };
 export default Sidebar;
