@@ -50,7 +50,7 @@ const Header = {
                     </div>
                     <div class="cart">
                     <a href="/#/carts">
-                            <div class="cart-number">
+                            <div id="countProduct" class="cart-number">
                                 0
                             </div>
                             <i class="fal fa-shopping-cart"></i>
@@ -90,6 +90,9 @@ const Header = {
                 reRender(HomePage, "app");
                 toastr.success("Đăng xuất thành công");
             });
+        }
+        if (localStorage.getItem("cart")) {
+            document.getElementById("countProduct").innerText = JSON.parse(localStorage.getItem("cart")).length;
         }
     },
 };

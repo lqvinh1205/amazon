@@ -64,7 +64,6 @@ const CateEditPage = {
         const formEdit = document.getElementById("form-edit-cate");
         formEdit.addEventListener("submit", (e) => {
             e.preventDefault();
-            console.log(101);
             const cate = {
                 nameCategory: document.getElementById("nameCate").value,
             };
