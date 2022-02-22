@@ -1,4 +1,5 @@
 import toastr from "toastr";
+// import instance from "instance";
 import { getLocalStorage, setLocalStorage } from ".";
 
 let cart = [];
@@ -7,6 +8,7 @@ if (localStorage.getItem("cart")) {
 }
 // eslint-disable-next-line import/prefer-default-export
 export const addToCart = (newProduct, callback) => {
+    // const carts = get;
     const exitItem = cart.find((item) => item.id === newProduct.id);
     if (!exitItem) {
         cart.push(newProduct);
@@ -43,7 +45,7 @@ export const decreaseQuantity = (id, callback) => {
         if (confirm) {
             // eslint-disable-next-line eqeqeq
             cart = cart.filter((item) => item.id !== +id);
-            toastr.success("Giảm số lượng thành công");
+            toastr.success("Xóa sản phẩm thành công");
         }
         // eslint-disable-next-line no-plusplus
         currentProduct.quantity++;

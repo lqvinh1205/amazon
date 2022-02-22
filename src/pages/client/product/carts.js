@@ -3,12 +3,13 @@ import Header from "../../../components/client/Header";
 import Footer from "../../../components/client/Footer";
 import { getLocalStorage, reRender } from "../../../utils";
 import { decreaseQuantity, increaseQuatity, removeProduct } from "../../../utils/carts";
+import { add } from "../../../api/cart";
 
 // import "../../style.css";
 
 const CartsPage = {
     render() {
-        const data = getLocalStorage("cart");
+        const data = getLocalStorage("cart") || [];
         return /* html */ `
             <div>
                 <header>
@@ -134,7 +135,7 @@ const CartsPage = {
                                     </div>
                                 </div>
                                 <div class="btn-cart1">
-                                    <button class="btn-order">Chọn mua</button>
+                                    <button id="btn-order" class="btn-order">Chọn mua</button>
                                 </div>
                             </div> 
 
@@ -162,9 +163,9 @@ const CartsPage = {
                 } else if (btn.classList.contains("btn-group-item-dec")) {
                     decreaseQuantity(id, () => {
                         reRender(CartsPage, "app");
+                        toastr.success("Giảm số lượng thành công");
                     });
                 } else {
-                    console.log(id);
                     removeProduct(id, () => {
                         reRender(CartsPage, "app");
                     });
@@ -178,6 +179,25 @@ const CartsPage = {
             totalPrice += parseFloat(price);
         });
         document.getElementById("toltalPrice").innerText = `${totalPrice} $`;
+        // console.log(JSON.parse(localStorage.getItem("cart")));
+
+        const btnOrder = document.getElementById("btn-order");
+        btnOrder.addEventListener("click", async () => {
+            const confirm = window.confirm("Xác nhận đặt hàng");
+            if (confirm) {
+                // add cart
+                add({
+                    userId: JSON.parse(localStorage.getItem("user")).id,
+                    total: totalPrice,
+                    status: 1,
+                    products: JSON.parse(localStorage.getItem("cart")),
+                }).then(() => {
+                    toastr.success("Đặt hàng thành công");
+                    localStorage.removeItem("cart");
+                    reRender(CartsPage, "app");
+                });
+            }
+        });
     },
 };
 export default CartsPage;

@@ -1,4 +1,5 @@
 import toastr from "toastr";
+import $ from "jquery";
 import { signin } from "../../api/user";
 import "../../css/signin.css";
 
@@ -14,9 +15,10 @@ const Signin = {
                         <h3>Sign-in</h3>
                         <form id="form-signin">
                             <label for="email">Email or mobile phone number</label>
-                            <input id="email" type="email" />
+                            <input id="email" type="email" name="email"/>
+                            <br />
                             <label for="password">Password</label>
-                            <input id="password" type="password" />
+                            <input id="password" type="password" name="password"/>
                             <button id="sign">Continue</button>
                         </form>
                         <p>By continuing, you agree to Amazon's <a href="/">Conditions of Use</a> and <a>Privacy Notice.</a></p>
@@ -70,6 +72,24 @@ const Signin = {
             } catch (error) {
                 toastr.error(error.response.data);
             }
+        });
+        $().ready(() => {
+            $("#form-signin").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                    password: "required",
+                },
+                messages: {
+                    email: {
+                        required: "Email không được để trống",
+                        email: "Sai định dạng",
+                    },
+                    password: "Password không được trống",
+                },
+            });
         });
     },
 };

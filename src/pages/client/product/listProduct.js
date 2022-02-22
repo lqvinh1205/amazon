@@ -66,7 +66,7 @@ const ListProductsPage = {
             const { cate } = btn.dataset;
             btn.addEventListener("click", async () => {
                 console.log(cate);
-                const { data } = await searchValue("products", `category=${cate}`);
+                const { data } = await searchValue("products", `nameCategory=${cate}`);
                 document.getElementById("list-product-content").innerHTML = await ProductsTemplate.render(data);
             });
         });

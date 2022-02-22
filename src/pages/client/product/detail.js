@@ -64,11 +64,17 @@ const DetailProduct = {
         const btnAddToCart = document.querySelector(".btn-addToCart");
         const quantityPro = document.querySelector("#quantity-product");
         btnAddToCart.addEventListener("click", async () => {
-            const { data } = await get(id);
-            // console.log(data);
-            addToCart({ ...data, quantity: +quantityPro.value || 1 }, () => {
-                toastr.success("Đã thêm");
-            });
+            if (localStorage.getItem("user")) {
+                const { data } = await get(id);
+                // console.log(data);
+                const userId = JSON.parse(localStorage.getItem("user")).id;
+                console.log(userId);
+                addToCart({ ...data, quantity: +quantityPro.value || 1 }, () => {
+                    toastr.success("Đã thêm");
+                });
+            } else {
+                toastr.error("Đăng nhập để thêm sản phẩm vào giỏ");
+            }
         });
     },
 };
