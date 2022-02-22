@@ -78,6 +78,7 @@ const CartsPage = {
                                                             <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
                                                                 <button data-id="${product.id}" class="btn btn-remove text-red-600 hover:text-indigo-900">Delete</button>
                                                             </td>
+                                                                <input class="countPrice" data-price="${product.quantity * product.priceProduct}" hidden/>
                                                         </tr>
                                                     `).join("")}
                                                     
@@ -127,7 +128,7 @@ const CartsPage = {
                                     <div class="toltal-cart3">
                                         <div>Tổng cộng</div>
                                         <div>
-                                            <span> 999.999 đ</span>
+                                            <span id="toltalPrice"> 999.999 đ</span>
                                             <span>(Đã bao gồm VAT nếu có)</span>
                                         </div>
                                     </div>
@@ -170,6 +171,13 @@ const CartsPage = {
                 }
             });
         });
+        const countPrice = document.querySelectorAll(".countPrice");
+        let totalPrice = 0;
+        countPrice.forEach((item) => {
+            const { price } = item.dataset;
+            totalPrice += parseFloat(price);
+        });
+        document.getElementById("toltalPrice").innerText = totalPrice;
     },
 };
 export default CartsPage;
