@@ -232,7 +232,7 @@
       "addressUser": "Số 123, Hà Nội",
       "emailUser": "quangvinh778891@gmail.com",
       "total": 6900,
-      "status": "1",
+      "status": "0",
       "products": [
         {
           "nameProduct": "Xbox Series S",
@@ -256,6 +256,163 @@
         }
       ],
       "id": 1
+    },
+    {
+      "userId": 1,
+      "nameUser": "Lê Vinh",
+      "numberPhone": "0391821",
+      "addressUser": "Hàm Nghi",
+      "emailUser": "quangvinh778891@gmail.com",
+      "total": 463.89,
+      "status": 1,
+      "products": [
+        {
+          "nameProduct": "Brother Genuine Cartridge TN760 High Yield Black Toner,1 Pack",
+          "priceProduct": 76.89,
+          "quantityProduct": "3",
+          "nameCategory": "1",
+          "descProduct": "Brother genuine cartridge: Brother TN 760 is a Brother genuine cartridge: that produces mono laser prints in high quality you can depend on\nYields up to 3,000 Pages: This replacement high yield black toner cartridge can print approximately 3,000 pages(1)\nSeamless integration: This professional replacement black toner cartridge creates rich blacks and is engineered to work in seamless unison with your Brother laser printer\nAmazon dash replenishment cartridge: Upon activation with your Dash eligible Brother printer, TN 760 replacement cartridges can be automatically ordered through Amazon Dash Replenishment and sent directly to your door\nFor use with brother laser printers and all in ones DCP L2550DW, HL L2350DW, HL L2370DW, HL L2370DWXL, HL L2390DW, HL L2395DW, MFC L2710DW, MFC L2750DW, MFC L2750DWXL",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645384386/images/n4rjcibwz5kkytjdplmg.jpg",
+          "id": 10,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Myst Ultrasonic Humidifier Mist Vaporizer With Water Filter",
+          "priceProduct": 189,
+          "quantityProduct": "7",
+          "nameCategory": "2",
+          "descProduct": "Filtered Cool and Warm Mist Humidifier- Enhanced water filtration provides clean humidity that is safe to breath while delivering cool and warm mist based on comfort levels. The humidifier for bedroom lasts up to 40 hours with a 1.2 gallon water tank and covered rooms as large as 540 square feet. Ideal for large rooms, bedrooms, nurseries, homes, offices and dorms.\nEasy to Clean and Patented No Leak Design- Simply detach the top water tank with built in handle to clean and add water. Convenient wide build allows for hands to clean all around thoroughly. Our no leak design makes sure the top water tank is fully secured to the base before allowing water to flow through.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645384474/images/hsawffd6xser7getqoei.jpg",
+          "id": 11,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Roku Ultra | Streaming Device HD/4K/HDR/Dolby Vision with Dolby Atmos, Bluetooth",
+          "priceProduct": 99,
+          "quantityProduct": "40",
+          "nameCategory": "1",
+          "descProduct": "Outrageously powerful: Enjoy a lightning-fast interface and channels like Sling, Hulu, Netflix, and Prime Video that launch in a snap on the fastest, most powerful Roku player ever\nOur best Wi-Fi: Enjoy fast, smooth TV streaming in any room in the house with our best Wi-Fi or choose to wire up over Ethernet\nCinematic streaming: Roku Ultra is the centerpiece of your home theater with spectacular 4K and Dolby Vision picture plus immersive Dolby Atmos sound\nFind your lost remote: Simply press the button on your streaming device and your Roku remote will play a sound\nNo more juggling remotes: Power up your TV, adjust the volume, and control your streaming device with one Roku voice remote",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383868/images/i2o0c94wkxahh4cvvllj.jpg",
+          "id": 7,
+          "quantity": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "",
+      "addressUser": "",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 4781,
+      "status": 1,
+      "products": [
+        {
+          "nameProduct": " Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
+          "priceProduct": 190,
+          "quantityProduct": "12",
+          "nameCategory": "3",
+          "descProduct": "Webcam comes with a 3-month XSplit VCam license and no privacy shutter. XSplit VCam lets you remove, replace and blur your background without a Green Screen.\nFull HD 1080p video calling and recording at 30 fps - You’ll make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.\nStereo audio with dual mics - Capture natural sound on calls and recorded videos.\nAdvanced capture software – Create and share video content easily with Logitech Capture.\nHD lighting adjustment and autofocus - The C920x automatically fine-tunes to the lighting conditions to produce bright, razor-sharp images even if you’re in a low-light setting.\nMic range - Up to 3 feet (1m)",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383796/images/fgfjemfdtkjh77ivcbjr.jpg",
+          "id": 6,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Roku Ultra | Streaming Device HD/4K/HDR/Dolby Vision with Dolby Atmos, Bluetooth",
+          "priceProduct": 99,
+          "quantityProduct": "40",
+          "nameCategory": "1",
+          "descProduct": "Outrageously powerful: Enjoy a lightning-fast interface and channels like Sling, Hulu, Netflix, and Prime Video that launch in a snap on the fastest, most powerful Roku player ever\nOur best Wi-Fi: Enjoy fast, smooth TV streaming in any room in the house with our best Wi-Fi or choose to wire up over Ethernet\nCinematic streaming: Roku Ultra is the centerpiece of your home theater with spectacular 4K and Dolby Vision picture plus immersive Dolby Atmos sound\nFind your lost remote: Simply press the button on your streaming device and your Roku remote will play a sound\nNo more juggling remotes: Power up your TV, adjust the volume, and control your streaming device with one Roku voice remote",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383868/images/i2o0c94wkxahh4cvvllj.jpg",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " SENNHEISER CX Plus True Wireless Earbuds - Bluetooth In-Ear Headphones",
+          "priceProduct": 126,
+          "quantityProduct": "6",
+          "nameCategory": "3",
+          "descProduct": "Superior sound, no compromise, powered by Sennheiser’s TrueResponse transducer, personalized with the built-in equalizer and Bass Boost.\nActive Noise Cancellation and Transparent Hearing to block out noise or gain awareness of external sounds at a touch in any environment.\nCustomizable Touch Controls for music and voice assistant to match individual preference for intuitive operation, along with independent earbud use.\nIPX4 splash resistance for trouble-free use while travelling, commuting or exercising.\nCompact, ergonomic design with 4 ear adapter sizes to ensure optimal comfort and a secure fit for anyone.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383977/images/y8ywpv36trxd28g3ur4g.jpg",
+          "id": 9,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "CINCOM Knee Massager with Heat Air Compression & Optional Heat ",
+          "priceProduct": 14,
+          "quantityProduct": "6",
+          "nameCategory": "3",
+          "descProduct": "【Compression & Heating Device】 - Designed with 2 big airbags in upper calf and lower thigh area, which works like a hand 360° covering your knee. In addition, there is a built-in infrared heating pad in the knee area. 2 heating levels are available. It features with overheating protection, the heat will be maintained after reaching the selected level, further relieve stiff joint, wake up tired muscles, improve circulation.\n【3 Modes & 3 Intensities】 - Contain multiple massage techniques that can provide kneading, squeezing and touching to meet different needs, gently but effectively relieve cold legs and knee pain, void worsening injury.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645384543/images/fc5rh1rb9px4jdz6qjo8.jpg",
+          "id": 12,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
+          "priceProduct": 4000,
+          "quantityProduct": "45",
+          "nameCategory": "2",
+          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
+          "id": 2,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Filtrete Smart Air Purifier & Air Quality Monitor for Large Rooms, up to 310 sqft, Alexa enabled, Wi-Fi Simple Setup, True HEPA Filter for Allergens,...",
+          "priceProduct": 263,
+          "quantityProduct": "80",
+          "nameCategory": "3",
+          "descProduct": "WI-FI ENABLED SMART AIR PURIFIER for large rooms (up to 310sqft), featuring a laser-based air quality sensor that detects microscopic particles in your air.  The Auto Mode function automatically adjusts fan speed when poor air quality is detected.\nALEXA ENABLED:  After linking your Alexa account to the Filtrete Smart App, you can use voice commands to interact with your air purifier.  Try \"Alexa, set the air purifier speed to auto\" or \"Alexa, what's the temperature on the air purifier?\"",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645366425/images/dheancul4jkx6tbitpaz.jpg",
+          "id": 3,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Sennheiser HD 350BT Bluetooth 5.0 Wireless Headphone ",
+          "priceProduct": 89,
+          "quantityProduct": "33",
+          "nameCategory": "2",
+          "descProduct": "Bluetooth 5.0 technology for effortless, reliable connectivity including AAC and AptX Low Latency codec support\n30-hour battery life with USB-C fast charging\nIntuitive controls including Virtual Assistant button for Siri and Google Assistant\nSennheiser App support providing an equalizer, Podcast Mode and Firmware updates\nClassic Sennheiser minimalist design crafted from high-quality materials for outstanding durability\n",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383925/images/oseyymulxs42gm0jhftd.jpg",
+          "id": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "",
+      "addressUser": "",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 0,
+      "status": 1,
+      "products": null,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "",
+      "addressUser": "",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 0,
+      "status": 1,
+      "products": null,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "",
+      "addressUser": "",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 0,
+      "status": 1,
+      "products": null,
+      "id": 6
     }
   ]
 }

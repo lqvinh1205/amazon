@@ -4,6 +4,10 @@ export const getAll = () => {
     const url = "/carts";
     return instance.get(url);
 };
+export const getAllDetails = (id) => {
+    const url = `/carts?id=${id}`;
+    return instance.get(url);
+};
 export const get = (id) => {
     const url = `/carts/${id}`;
     return instance.get(url);

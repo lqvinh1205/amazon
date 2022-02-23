@@ -3,13 +3,14 @@ import Navbar from "../../../components/admin/navbar";
 import Footer from "../../../components/client/Footer";
 import "toastr/build/toastr.min.css";
 import { getAll, update } from "../../../api/cart";
+import DetailCart from "../../../components/client/detailCart";
 
 const OrderManager = {
     async render() {
         const { data } = await getAll();
 
         return /* html */`
-        <div class="d-flex items-center">
+        <div id="wrapper" class="d-flex items-center">
             <nav class="bg-gray-800">
                 ${Navbar.render()}
             </nav>
@@ -101,10 +102,10 @@ const OrderManager = {
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                            
-                                            <button data-id=${order.id} class="btn btn-remove text-indigo-600 hover:text-indigo-900">Chi tiết</button>
+                                            <button data-id=${order.id} class="btn btn-detail text-indigo-600 hover:text-indigo-900">Chi tiết</button>
                                         </td>
                                     </tr>
-                                `).join("")}
+                                    `).join("")}
 
                                 <!-- More people... -->
                             </tbody>
@@ -119,6 +120,11 @@ const OrderManager = {
                 ${Footer.render()}
             </footer>
         </div>
+        <div id="wrapperModal">
+            <div id="modalDetail"></div>
+            <button id="icon-close">x</button>
+        </div>
+
         `;
     },
     afterRender() {
@@ -133,6 +139,22 @@ const OrderManager = {
                 });
             });
         });
+        const btnDetail = document.querySelectorAll(".btn-detail");
+        btnDetail.forEach((btn) => {
+            const { id } = btn.dataset;
+            btn.addEventListener("click", async () => {
+                document.getElementById("wrapperModal").style.display = "block";
+                document.getElementById("modalDetail").innerHTML = await DetailCart.render(id);
+                document.getElementById("wrapper").classList.add("filter");
+            });
+        });
+        const iconClose = document.getElementById("icon-close");
+        if (iconClose) {
+            iconClose.addEventListener("click", () => {
+                document.getElementById("wrapperModal").style.display = "none";
+                document.getElementById("wrapper").classList.remove("filter");
+            });
+        }
     },
 };
 export default OrderManager;

@@ -234,7 +234,6 @@ const CartsPage = {
         btnOrder.addEventListener("submit", (e) => {
             e.preventDefault();
             const confirm = window.confirm("Xác nhận đặt hàng");
-            console.log("JDLKSDFSLKJFDLJ");
             if (confirm) {
                 // add cart
                 add({

@@ -1,4 +1,5 @@
 import Navigo from "navigo";
+import DetaiCart from "./components/client/detailCart";
 import CategoryPages from "./pages/admin/category";
 import CateAddPage from "./pages/admin/category/add";
 import CateEditPage from "./pages/admin/category/edit";
@@ -57,6 +58,7 @@ router.on({
     "/admin/products/add": () => printf(ProductAddPage),
     "/admin/products/:id/edit": ({ data }) => printf(ProductEditPage, data.id),
     "/admin/orders": () => printf(OrderManager),
+    "/admin/detail": () => printf(DetaiCart),
 
 });
 
