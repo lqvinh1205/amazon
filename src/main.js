@@ -11,6 +11,7 @@ import OrderManager from "./pages/admin/order";
 import ProductsPage from "./pages/admin/products";
 import ProductAddPage from "./pages/admin/products/add";
 import ProductEditPage from "./pages/admin/products/edit";
+import OrderManagerForUser from "./pages/client/order";
 import CartsPage from "./pages/client/product/carts";
 import DetailProduct from "./pages/client/product/detail";
 import ListProductsPage from "./pages/client/product/listProduct";
@@ -45,6 +46,7 @@ router.on({
     "/signin": () => printf(Signin),
     "/signup": () => printf(Signup),
     "/carts": () => printf(CartsPage),
+    "/orders": () => printf(OrderManagerForUser),
     "/products": () => printf(ListProductsPage),
     "/products/:id": ({ data }) => printf(DetailProduct, data.id),
     "/admin": () => printf(AdminDashboard),

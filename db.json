@@ -226,13 +226,13 @@
   ],
   "carts": [
     {
-      "userId": 1,
-      "nameUser": "admin",
-      "numberPhone": "0359102999",
-      "addressUser": "Số 123, Hà Nội",
-      "emailUser": "quangvinh778891@gmail.com",
-      "total": 6900,
-      "status": "2",
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "0359102989",
+      "addressUser": "123 hà nội",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 7141,
+      "status": 1,
       "products": [
         {
           "nameProduct": "Xbox Series S",
@@ -252,42 +252,134 @@
           "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
           "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
           "id": 2,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Medify MA-40 Air Purifier with H13 True HEPA Filter | 840 sq ft Coverage | for Allergens, Smoke, Smokers, Dust, Odors, Pollen, Pet Dander",
+          "priceProduct": 241,
+          "quantityProduct": "50",
+          "nameCategory": "1",
+          "descProduct": "Color\tWhite\nBrand\tMedify Air\nItem Dimensions LxWxH\t10.5 x 11 x 22 inches\nPower Source\tCorded Electric\nItem Weight\t15 Pounds",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645366743/images/qcbdjohashdxzezdbxia.jpg",
+          "id": 4,
           "quantity": 1
         }
       ],
       "id": 1
     },
     {
-      "userId": 1,
-      "nameUser": "admin",
-      "numberPhone": "",
-      "addressUser": "",
-      "emailUser": "quangvinh778891@gmail.com",
-      "total": 2900,
-      "status": 1,
+      "userId": 2,
+      "nameUser": "Le Vinh",
+      "numberPhone": "0359102999",
+      "addressUser": "Hoan Kiem, Hai Ba Trung",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 353.89,
+      "status": 0,
       "products": [
         {
-          "nameProduct": "Xbox Series S",
-          "priceProduct": 2900,
-          "quantityProduct": "99",
+          "nameProduct": " Filtrete Smart Air Purifier & Air Quality Monitor for Large Rooms, up to 310 sqft, Alexa enabled, Wi-Fi Simple Setup, True HEPA Filter for Allergens,...",
+          "priceProduct": 263,
+          "quantityProduct": "80",
+          "nameCategory": "3",
+          "descProduct": "WI-FI ENABLED SMART AIR PURIFIER for large rooms (up to 310sqft), featuring a laser-based air quality sensor that detects microscopic particles in your air.  The Auto Mode function automatically adjusts fan speed when poor air quality is detected.\nALEXA ENABLED:  After linking your Alexa account to the Filtrete Smart App, you can use voice commands to interact with your air purifier.  Try \"Alexa, set the air purifier speed to auto\" or \"Alexa, what's the temperature on the air purifier?\"",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645366425/images/dheancul4jkx6tbitpaz.jpg",
+          "id": 3,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Brother Genuine Cartridge TN760 High Yield Black Toner,1 Pack",
+          "priceProduct": 76.89,
+          "quantityProduct": "3",
           "nameCategory": "1",
-          "descProduct": "Access your favorite entertainment through apps like YouTube, Netflix, and more\nEnjoy over 100 games right out of the box with a 1 month Xbox Game Pass trial\nWatch 4K Blu-ray movies and stream 4K video on Netflix, Amazon, Hulu, Microsoft Movies & TV, and more\nPlay with friends and family near and far—sitting together on the sofa or around the world on Xbox Live, the fastest, most reliable gaming network\nXbox 1 games and accessories work together",
-          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645365881/images/l3fpmpxoirvrilyc6pae.jpg",
-          "id": 1,
+          "descProduct": "Brother genuine cartridge: Brother TN 760 is a Brother genuine cartridge: that produces mono laser prints in high quality you can depend on\nYields up to 3,000 Pages: This replacement high yield black toner cartridge can print approximately 3,000 pages(1)\nSeamless integration: This professional replacement black toner cartridge creates rich blacks and is engineered to work in seamless unison with your Brother laser printer\nAmazon dash replenishment cartridge: Upon activation with your Dash eligible Brother printer, TN 760 replacement cartridges can be automatically ordered through Amazon Dash Replenishment and sent directly to your door\nFor use with brother laser printers and all in ones DCP L2550DW, HL L2350DW, HL L2370DW, HL L2370DWXL, HL L2390DW, HL L2395DW, MFC L2710DW, MFC L2750DW, MFC L2750DWXL",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645384386/images/n4rjcibwz5kkytjdplmg.jpg",
+          "id": 10,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "CINCOM Knee Massager with Heat Air Compression & Optional Heat ",
+          "priceProduct": 14,
+          "quantityProduct": "6",
+          "nameCategory": "3",
+          "descProduct": "【Compression & Heating Device】 - Designed with 2 big airbags in upper calf and lower thigh area, which works like a hand 360° covering your knee. In addition, there is a built-in infrared heating pad in the knee area. 2 heating levels are available. It features with overheating protection, the heat will be maintained after reaching the selected level, further relieve stiff joint, wake up tired muscles, improve circulation.\n【3 Modes & 3 Intensities】 - Contain multiple massage techniques that can provide kneading, squeezing and touching to meet different needs, gently but effectively relieve cold legs and knee pain, void worsening injury.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645384543/images/fc5rh1rb9px4jdz6qjo8.jpg",
+          "id": 12,
           "quantity": 1
         }
       ],
       "id": 2
     },
     {
-      "userId": 1,
-      "nameUser": "admin",
-      "numberPhone": "0359102989",
-      "addressUser": "123 hà nội",
-      "emailUser": "quangvinh778891@gmail.com",
-      "total": 4000,
+      "userId": 2,
+      "nameUser": "Le Quang Vinh",
+      "numberPhone": "0391821331",
+      "addressUser": "Trinh Van Bo",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 377,
+      "status": 0,
+      "products": [
+        {
+          "nameProduct": " Seagate Portable 2TB External Hard Drive Portable HDD",
+          "priceProduct": 61,
+          "quantityProduct": "44",
+          "nameCategory": "2",
+          "descProduct": "Easily store and access 2TB to content on the go with the Seagate Portable Drive, a USB external hard drive\nDesigned to work with Windows or Mac computers, this external hard drive makes backup a snap just drag and drop\nTo get set up, connect the portable hard drive to a computer for automatic recognition no software required\nThis USB drive provides plug and play simplicity with the included 18 inch USB 3.0 cable",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383727/images/ld5ipwombisxanksd72i.jpg",
+          "id": 5,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " SENNHEISER CX Plus True Wireless Earbuds - Bluetooth In-Ear Headphones",
+          "priceProduct": 126,
+          "quantityProduct": "6",
+          "nameCategory": "3",
+          "descProduct": "Superior sound, no compromise, powered by Sennheiser’s TrueResponse transducer, personalized with the built-in equalizer and Bass Boost.\nActive Noise Cancellation and Transparent Hearing to block out noise or gain awareness of external sounds at a touch in any environment.\nCustomizable Touch Controls for music and voice assistant to match individual preference for intuitive operation, along with independent earbud use.\nIPX4 splash resistance for trouble-free use while travelling, commuting or exercising.\nCompact, ergonomic design with 4 ear adapter sizes to ensure optimal comfort and a secure fit for anyone.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383977/images/y8ywpv36trxd28g3ur4g.jpg",
+          "id": 9,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
+          "priceProduct": 190,
+          "quantityProduct": "12",
+          "nameCategory": "3",
+          "descProduct": "Webcam comes with a 3-month XSplit VCam license and no privacy shutter. XSplit VCam lets you remove, replace and blur your background without a Green Screen.\nFull HD 1080p video calling and recording at 30 fps - You’ll make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.\nStereo audio with dual mics - Capture natural sound on calls and recorded videos.\nAdvanced capture software – Create and share video content easily with Logitech Capture.\nHD lighting adjustment and autofocus - The C920x automatically fine-tunes to the lighting conditions to produce bright, razor-sharp images even if you’re in a low-light setting.\nMic range - Up to 3 feet (1m)",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383796/images/fgfjemfdtkjh77ivcbjr.jpg",
+          "id": 6,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "nameUser": "member",
+      "numberPhone": "Hung",
+      "addressUser": "Ba Dinh",
+      "emailUser": "vinhlqph18160@fpt.edu.vn",
+      "total": 4431,
       "status": 1,
       "products": [
+        {
+          "nameProduct": " Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
+          "priceProduct": 190,
+          "quantityProduct": "12",
+          "nameCategory": "3",
+          "descProduct": "Webcam comes with a 3-month XSplit VCam license and no privacy shutter. XSplit VCam lets you remove, replace and blur your background without a Green Screen.\nFull HD 1080p video calling and recording at 30 fps - You’ll make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.\nStereo audio with dual mics - Capture natural sound on calls and recorded videos.\nAdvanced capture software – Create and share video content easily with Logitech Capture.\nHD lighting adjustment and autofocus - The C920x automatically fine-tunes to the lighting conditions to produce bright, razor-sharp images even if you’re in a low-light setting.\nMic range - Up to 3 feet (1m)",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383796/images/fgfjemfdtkjh77ivcbjr.jpg",
+          "id": 6,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Medify MA-40 Air Purifier with H13 True HEPA Filter | 840 sq ft Coverage | for Allergens, Smoke, Smokers, Dust, Odors, Pollen, Pet Dander",
+          "priceProduct": 241,
+          "quantityProduct": "50",
+          "nameCategory": "1",
+          "descProduct": "Color\tWhite\nBrand\tMedify Air\nItem Dimensions LxWxH\t10.5 x 11 x 22 inches\nPower Source\tCorded Electric\nItem Weight\t15 Pounds",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645366743/images/qcbdjohashdxzezdbxia.jpg",
+          "id": 4,
+          "quantity": 1
+        },
         {
           "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
           "priceProduct": 4000,
@@ -299,27 +391,17 @@
           "quantity": 1
         }
       ],
-      "id": 3
+      "id": 4
     },
     {
       "userId": 1,
-      "nameUser": "admin",
-      "numberPhone": "",
-      "addressUser": "",
+      "nameUser": "Trung",
+      "numberPhone": "035910234",
+      "addressUser": "Tay Son",
       "emailUser": "quangvinh778891@gmail.com",
-      "total": 6900,
-      "status": 1,
+      "total": 3879,
+      "status": 0,
       "products": [
-        {
-          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
-          "priceProduct": 4000,
-          "quantityProduct": "45",
-          "nameCategory": "2",
-          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
-          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
-          "id": 2,
-          "quantity": 1
-        },
         {
           "nameProduct": "Xbox Series S",
           "priceProduct": 2900,
@@ -329,9 +411,29 @@
           "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645365881/images/l3fpmpxoirvrilyc6pae.jpg",
           "id": 1,
           "quantity": 1
+        },
+        {
+          "nameProduct": " Filtrete Smart Air Purifier & Air Quality Monitor for Large Rooms, up to 310 sqft, Alexa enabled, Wi-Fi Simple Setup, True HEPA Filter for Allergens,...",
+          "priceProduct": 263,
+          "quantityProduct": "80",
+          "nameCategory": "3",
+          "descProduct": "WI-FI ENABLED SMART AIR PURIFIER for large rooms (up to 310sqft), featuring a laser-based air quality sensor that detects microscopic particles in your air.  The Auto Mode function automatically adjusts fan speed when poor air quality is detected.\nALEXA ENABLED:  After linking your Alexa account to the Filtrete Smart App, you can use voice commands to interact with your air purifier.  Try \"Alexa, set the air purifier speed to auto\" or \"Alexa, what's the temperature on the air purifier?\"",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645366425/images/dheancul4jkx6tbitpaz.jpg",
+          "id": 3,
+          "quantity": 3
+        },
+        {
+          "nameProduct": " Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
+          "priceProduct": 190,
+          "quantityProduct": "12",
+          "nameCategory": "3",
+          "descProduct": "Webcam comes with a 3-month XSplit VCam license and no privacy shutter. XSplit VCam lets you remove, replace and blur your background without a Green Screen.\nFull HD 1080p video calling and recording at 30 fps - You’ll make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.\nStereo audio with dual mics - Capture natural sound on calls and recorded videos.\nAdvanced capture software – Create and share video content easily with Logitech Capture.\nHD lighting adjustment and autofocus - The C920x automatically fine-tunes to the lighting conditions to produce bright, razor-sharp images even if you’re in a low-light setting.\nMic range - Up to 3 feet (1m)",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383796/images/fgfjemfdtkjh77ivcbjr.jpg",
+          "id": 6,
+          "quantity": 1
         }
       ],
-      "id": 4
+      "id": 5
     }
   ]
 }

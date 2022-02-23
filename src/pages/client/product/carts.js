@@ -244,12 +244,12 @@ const CartsPage = {
                     addressUser: document.getElementById("addressUser").value,
                     emailUser: document.getElementById("emailUser").value,
                     total: totalPrice,
-                    status: 1,
+                    status: 0,
                     products: JSON.parse(localStorage.getItem("cart")),
                 }).then(() => {
                     toastr.success("Đặt hàng thành công");
                     localStorage.removeItem("cart");
-                    reRender(CartsPage, "app");
+                    document.location.href = "/#/orders";
                 });
             } else if (confirm && !localStorage.getItem("cart")) {
                 toastr.error("Giỏ hàng trống");

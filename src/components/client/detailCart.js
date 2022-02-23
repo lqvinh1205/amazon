@@ -23,7 +23,7 @@ const DetailCart = {
                         <span>Địa chỉ: ${data[0].addressUser}</span>
                     </div>
                     <div class="sidebar-cart1 sidebar-cart1-details text-green-600">
-                        <span>Tình trạng: ${(data[0].status === "0" ? "Chờ xác nhận" : (data[0].status) === "1" ? "Đã xác nhận" : (data[0].status) === "2" ? "Hoàn thành" : "Hủy")}</span>
+                        <span>Tình trạng: ${(data[0].status === 0 ? "Chờ xác nhận" : (data[0].status) === 1 ? "Đã xác nhận" : (data[0].status) === 2 ? "Hoàn thành" : "Hủy")}</span>
                     </div>
                     <div class="sidebar-cart1 sidebar-cart1-details">
                         <span>Tổng tiền: ${data[0].total} $</span>

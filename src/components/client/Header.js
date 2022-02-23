@@ -45,8 +45,8 @@ const Header = {
                     `}
                     </div>
                     <div class="returns">
-                        <p>Returns</p>
-                        <p>& Orders</p>
+                        <a href="/#/orders"><p>Returns</p>
+                        <p>& Orders</p></a>
                     </div>
                     <div class="cart">
                     <a href="/#/carts">
