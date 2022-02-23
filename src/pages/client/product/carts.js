@@ -236,26 +236,21 @@ const CartsPage = {
             const confirm = window.confirm("Xác nhận đặt hàng");
             console.log(confirm);
             if (confirm && localStorage.getItem("cart")) {
-                const countCarts = JSON.parse(localStorage.getItem("cart"));
-                if (countCarts.length > 0) {
-                    // add cart
-                    add({
-                        userId: JSON.parse(localStorage.getItem("user")).id,
-                        nameUser: document.getElementById("nameUser").value,
-                        numberPhone: document.getElementById("numberPhone").value,
-                        addressUser: document.getElementById("addressUser").value,
-                        emailUser: document.getElementById("emailUser").value,
-                        total: totalPrice,
-                        status: 1,
-                        products: JSON.parse(localStorage.getItem("cart")),
-                    }).then(() => {
-                        toastr.success("Đặt hàng thành công");
-                        localStorage.removeItem("cart");
-                        reRender(CartsPage, "app");
-                    });
-                } else {
-                    toastr.error("Giỏ hàng trống");
-                }
+                // add cart
+                add({
+                    userId: JSON.parse(localStorage.getItem("user")).id,
+                    nameUser: document.getElementById("nameUser").value,
+                    numberPhone: document.getElementById("numberPhone").value,
+                    addressUser: document.getElementById("addressUser").value,
+                    emailUser: document.getElementById("emailUser").value,
+                    total: totalPrice,
+                    status: 1,
+                    products: JSON.parse(localStorage.getItem("cart")),
+                }).then(() => {
+                    toastr.success("Đặt hàng thành công");
+                    localStorage.removeItem("cart");
+                    reRender(CartsPage, "app");
+                });
             } else if (confirm && !localStorage.getItem("cart")) {
                 toastr.error("Giỏ hàng trống");
             }
