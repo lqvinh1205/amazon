@@ -36,6 +36,12 @@ const OrderManager = {
                                     Tên khách hàng
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Số điện thoại
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Địa chỉ
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Tình trạng
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -58,7 +64,21 @@ const OrderManager = {
                                         <td class="py-4 whitespace-nowrap">
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-gray-900 overflow-hidden max-w-xs">
-                                                ${order.userId}
+                                                ${order.nameUser}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-4 whitespace-nowrap">
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900 overflow-hidden max-w-xs">
+                                                ${order.numberPhone}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-4 whitespace-nowrap">
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900 overflow-hidden max-w-xs">
+                                                ${order.addressUser}
                                                 </div>
                                             </div>
                                         </td>
@@ -102,24 +122,10 @@ const OrderManager = {
         `;
     },
     afterRender() {
-        // const status = {
-        //     0: "Chờ xác nhận",
-        //     1: "Đã xác nhận",
-        //     2: "Hoàn thành",
-        //     3: "Hủy",
-        // };
-        // const renderStatus = () => {
-        //     for (const key in status) {
-        //         console.log(key);
-        //     }
-        // };
-        // renderStatus();
         const btns = document.querySelectorAll(".status");
         btns.forEach((btn) => {
             const { id } = btn.dataset;
             btn.addEventListener("change", () => {
-                console.log(id);
-                console.log(btn);
                 update({
                     status: btn.value,
                 }, id).then(() => {

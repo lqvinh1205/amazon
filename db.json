@@ -232,7 +232,7 @@
       "addressUser": "Số 123, Hà Nội",
       "emailUser": "quangvinh778891@gmail.com",
       "total": 6900,
-      "status": 1,
+      "status": "1",
       "products": [
         {
           "nameProduct": "Xbox Series S",
