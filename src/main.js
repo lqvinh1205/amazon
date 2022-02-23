@@ -6,7 +6,7 @@ import AdminDashboard from "./pages/admin/dashboard";
 import NewsPage from "./pages/admin/news";
 import NewAddPage from "./pages/admin/news/add";
 import NewEditPage from "./pages/admin/news/edit";
-import OrderManager from "./pages/admin/products copy";
+import OrderManager from "./pages/admin/order";
 import ProductsPage from "./pages/admin/products";
 import ProductAddPage from "./pages/admin/products/add";
 import ProductEditPage from "./pages/admin/products/edit";

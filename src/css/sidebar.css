@@ -55,7 +55,8 @@
 
     width: 90%;
 }
-#sortPrice{
+#sortPrice,
+.status{
     width: 100%;
     padding: 3px;
 }

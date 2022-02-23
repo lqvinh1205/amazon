@@ -2,13 +2,12 @@ import toastr from "toastr";
 import Navbar from "../../../components/admin/navbar";
 import Footer from "../../../components/client/Footer";
 import "toastr/build/toastr.min.css";
-import { getAll, remove } from "../../../api/products";
-import { reRender } from "../../../utils";
-import ProductsPage from "../products";
+import { getAll, update } from "../../../api/cart";
 
 const OrderManager = {
     async render() {
         const { data } = await getAll();
+
         return /* html */`
         <div class="d-flex items-center">
             <nav class="bg-gray-800">
@@ -31,62 +30,58 @@ const OrderManager = {
                             <thead class="bg-gray-50">
                                 <tr>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    STT
+                                    Mã đơn hàng
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Name Product
+                                    Tên khách hàng
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Image
+                                    Tình trạng
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Price
+                                    Tổng tiền
                                 </th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Quantity
+                                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Action
                                 </th>
-                                <th scope="col-2" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    
-                                </th>
-                                <th scope="col-2" class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-green-700">
-                                    <a href="/#/admin/products/add"><button class="w-full h-full text-white">Add</button></a>
-                                </th>
-                            
+
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
-                                ${data.map((product, index) => /* html */`
+                                ${data.map((order) => /* html */`
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex items-center">
-                                                ${index + 1}
+                                                ${order.id}
                                             </div>
                                         </td>
                                         <td class="py-4 whitespace-nowrap">
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-gray-900 overflow-hidden max-w-xs">
-                                                ${product.nameProduct}
+                                                ${order.userId}
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <div class="flex-shrink-0 h-10 w-10">
-                                                    <img class="h-full w-full" src="${product.img}" alt="">
+                                            <div class="flex-shrink-0">
+                                                <div class="flex-shrink-0">
+                                                    <div class="search-sidebar">
+                                                        <select class="status" data-id="${order.id}">
+                                                            <option value="0" ${order.status === "0" ? "selected" : ""}>Chờ xác nhận</option>
+                                                            <option value="1" ${order.status === "1" ? "selected" : ""}>Đã xác nhận</option>
+                                                            <option value="2" ${order.status === "2" ? "selected" : ""}>Hoàn thành</option>
+                                                            <option value="3" ${order.status === "3" ? "selected" : ""}>Hủy</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm text-gray-900">${product.priceProduct}</div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm text-gray-900">${product.quantityProduct}</div>
+                                            <div class="text-sm text-gray-900">${order.total}</div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="/#/admin/products/${product.id}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <button data-id=${product.id} class="btn btn-remove text-red-600 hover:text-indigo-900">Delete</button>
+                                           
+                                            <button data-id=${order.id} class="btn btn-remove text-indigo-600 hover:text-indigo-900">Chi tiết</button>
                                         </td>
                                     </tr>
                                 `).join("")}
@@ -107,19 +102,29 @@ const OrderManager = {
         `;
     },
     afterRender() {
-        const btns = document.querySelectorAll(".btn-remove");
+        // const status = {
+        //     0: "Chờ xác nhận",
+        //     1: "Đã xác nhận",
+        //     2: "Hoàn thành",
+        //     3: "Hủy",
+        // };
+        // const renderStatus = () => {
+        //     for (const key in status) {
+        //         console.log(key);
+        //     }
+        // };
+        // renderStatus();
+        const btns = document.querySelectorAll(".status");
         btns.forEach((btn) => {
             const { id } = btn.dataset;
-            btn.addEventListener("click", () => {
-                const confirm = window.confirm("Bạn có chắc muốn xóa ?");
-                if (confirm) {
-                    remove(id).then(() => {
-                        toastr.success("Bạn đã xóa thành công !");
-                    }).then(() => {
-                        window.location.href = "/#/admin/products";
-                        reRender(ProductsPage, "app");
-                    });
-                }
+            btn.addEventListener("change", () => {
+                console.log(id);
+                console.log(btn);
+                update({
+                    status: btn.value,
+                }, id).then(() => {
+                    toastr.success("Thay đổi trạng thái thành công");
+                });
             });
         });
     },

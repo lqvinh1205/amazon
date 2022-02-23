@@ -226,8 +226,12 @@
   ],
   "carts": [
     {
-      "userId": 2,
-      "total": 5800,
+      "userId": 1,
+      "nameUser": "admin",
+      "numberPhone": "0359102999",
+      "addressUser": "Số 123, Hà Nội",
+      "emailUser": "quangvinh778891@gmail.com",
+      "total": 6900,
       "status": 1,
       "products": [
         {
@@ -238,7 +242,17 @@
           "descProduct": "Access your favorite entertainment through apps like YouTube, Netflix, and more\nEnjoy over 100 games right out of the box with a 1 month Xbox Game Pass trial\nWatch 4K Blu-ray movies and stream 4K video on Netflix, Amazon, Hulu, Microsoft Movies & TV, and more\nPlay with friends and family near and far—sitting together on the sofa or around the world on Xbox Live, the fastest, most reliable gaming network\nXbox 1 games and accessories work together",
           "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645365881/images/l3fpmpxoirvrilyc6pae.jpg",
           "id": 1,
-          "quantity": 2
+          "quantity": 1
+        },
+        {
+          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
+          "priceProduct": 4000,
+          "quantityProduct": "45",
+          "nameCategory": "2",
+          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
+          "id": 2,
+          "quantity": 1
         }
       ],
       "id": 1

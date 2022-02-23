@@ -7,7 +7,7 @@ import { add } from "../../../api/products";
 import Navbar from "../../../components/admin/navbar";
 import Footer from "../../../components/client/Footer";
 
-const ProductAddPage = {
+const OrderPage = {
     render() {
         return /* html */ `
             <div class="d-flex items-center">
@@ -183,4 +183,4 @@ const ProductAddPage = {
         });
     },
 };
-export default ProductAddPage;
+export default OrderPage;

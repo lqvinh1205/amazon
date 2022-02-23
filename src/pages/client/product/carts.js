@@ -1,4 +1,7 @@
 import toastr from "toastr";
+import $ from "jquery";
+// eslint-disable-next-line no-unused-vars
+import validate from "jquery-validation";
 import Header from "../../../components/client/Header";
 import Footer from "../../../components/client/Footer";
 import { getLocalStorage, reRender } from "../../../utils";
@@ -93,50 +96,74 @@ const CartsPage = {
                             </div>
 
                             <div class="sidebar-carts">
-                                <div class="sidebar-cart">
-                                    <div class="sidebar-cart1">
-                                        <span>Giao tới</span>
-                                        <a href="/">Thay đổi</a>
-                                    </div>
-                                    <div class="sidebar-cart2">
-                                        <span>Lê Vinh</span>
-                                        <span>0359102999</span>
-                                    </div>
-                                    <div class="sidebar-cart3">
-                                        <span>Tk10, xã Hát Lót, Huyện Mai Sơn, Sơn La</span>
-                                    </div>
-                                </div>
+                                <form id="form-order">
+                                    <div class="sidebar-cart">
+                                        <div class="sidebar-cart1">
+                                            <span>Nhập thông tin</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-2">
+                                                
+                                                <div class="mt-1">
+                                                    <label for="about" class="block text-sm font-medium text-gray-700">
+                                                    Tên
+                                                    </label>
+                                                    <input type="text" id="nameUser" name="nameUser" value="${JSON.parse(localStorage.getItem("user")).username}"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                </div>
+                                                <div class="mt-1">
+                                                    <label for="about" class="block text-sm font-medium text-gray-700">
+                                                    Số điện thoại
+                                                    </label>
+                                                    <input type="text" id="numberPhone" name="numberPhone" placeholder="Số điện thoại"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                                </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <label for="about" class="block text-sm font-medium text-gray-700">
+                                            Địa chỉ
+                                            </label>
+                                            <input type="text" id="addressUser" name="addressUser" placeholder="Địa chỉ"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                        </div>
 
-                                <div class="voucher">
-                                    <div class="voucher1">
-                                        <span>Amazon sales</span>
+                                        <div class="mt-1">
+                                            <label for="about" class="block text-sm font-medium text-gray-700">
+                                            Email
+                                            </label>
+                                            <input type="text" id="emailUser" name="emailUser" value="${JSON.parse(localStorage.getItem("user")).email}"  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 p-2 rounded-md">
+                                        </div>
+                                
+                                        
                                     </div>
-                                    <div class="voucher2">
-                                        <span>Chọn hoặc nhập khuyến mãi</span>
-                                    </div>
-                                </div> 
 
-                                <div class="toltal-cart">
-                                    <div class="toltal-cart1">
-                                        <span>Tạm tính</span>
-                                        <span>0đ</span>
-                                    </div>
-                                    <div class="toltal-cart2">
-                                        <span>Giảm giá</span>
-                                        <span>0đ</span>
-                                    </div>
-                                    <hr />
-                                    <div class="toltal-cart3">
-                                        <div>Tổng cộng</div>
-                                        <div>
-                                            <span id="toltalPrice"> 999.999 đ</span>
-                                            <span>(Đã bao gồm VAT nếu có)</span>
+                                    <div class="voucher">
+                                        <div class="voucher1">
+                                            <span>Amazon sales</span>
+                                        </div>
+                                        <div class="voucher2">
+                                            <span>Chọn hoặc nhập khuyến mãi</span>
+                                        </div>
+                                    </div> 
+
+                                    <div class="toltal-cart">
+                                        <div class="toltal-cart1">
+                                            <span>Tạm tính</span>
+                                            <span>0đ</span>
+                                        </div>
+                                        <div class="toltal-cart2">
+                                            <span>Giảm giá</span>
+                                            <span>0đ</span>
+                                        </div>
+                                        <hr />
+                                        <div class="toltal-cart3">
+                                            <div>Tổng cộng</div>
+                                            <div>
+                                                <span id="toltalPrice"> 999.999 đ</span>
+                                                <span>(Đã bao gồm VAT nếu có)</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="btn-cart1">
-                                    <button id="btn-order" class="btn-order">Chọn mua</button>
-                                </div>
+                                    <div class="btn-cart1">
+                                        <button id="btn-order" class="btn-order">Chọn mua</button>
+                                    </div>
+                                </form>
                             </div> 
 
                         </div>
@@ -151,6 +178,28 @@ const CartsPage = {
     },
     afterRender() {
         Header.afterRender();
+        $().ready(() => {
+            $("#form-order").validate({
+                rules: {
+                    nameUser: "required",
+                    numberPhone: "required",
+                    addressUser: "required",
+                    emailUser: {
+                        required: true,
+                        email: true,
+                    },
+                },
+                messages: {
+                    nameUser: "Tên đang trống",
+                    numberPhone: "Số điện thoại trống",
+                    addressUser: "Địa chỉ trống",
+                    emailUser: {
+                        required: "Email đang trống",
+                        email: "Sai định dạng",
+                    },
+                },
+            });
+        });
         const btns = document.querySelectorAll(".btn");
         btns.forEach((btn) => {
             const { id } = btn.dataset;
@@ -181,13 +230,19 @@ const CartsPage = {
         document.getElementById("toltalPrice").innerText = `${totalPrice} $`;
         // console.log(JSON.parse(localStorage.getItem("cart")));
 
-        const btnOrder = document.getElementById("btn-order");
-        btnOrder.addEventListener("click", async () => {
+        const btnOrder = document.getElementById("form-order");
+        btnOrder.addEventListener("submit", (e) => {
+            e.preventDefault();
             const confirm = window.confirm("Xác nhận đặt hàng");
+            console.log("JDLKSDFSLKJFDLJ");
             if (confirm) {
                 // add cart
                 add({
                     userId: JSON.parse(localStorage.getItem("user")).id,
+                    nameUser: document.getElementById("nameUser").value,
+                    numberPhone: document.getElementById("numberPhone").value,
+                    addressUser: document.getElementById("addressUser").value,
+                    emailUser: document.getElementById("emailUser").value,
                     total: totalPrice,
                     status: 1,
                     products: JSON.parse(localStorage.getItem("cart")),
@@ -201,3 +256,16 @@ const CartsPage = {
     },
 };
 export default CartsPage;
+
+// eslint-disable-next-line no-lone-blocks
+{ /* <div class="sidebar-cart1">
+<span>Giao tới</span>
+<a href="/">Thay đổi</a>
+</div>
+<div class="sidebar-cart2">
+<span>Lê Vinh</span>
+<span>0359102999</span>
+</div>
+<div class="sidebar-cart3">
+<span>Tk10, xã Hát Lót, Huyện Mai Sơn, Sơn La</span>
+</div> */ }
