@@ -48,12 +48,12 @@ const DetailCart = {
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody class="bg-white divide-y divide-gray-200">
+                                        <tbody class="bg-white divide-y divide-gray-200  overflow-auto">
                                         
                                         ${convertData.map((product) => /* html */`
                                             <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap">
-                                                    <div class="text-sm text-left font-medium text-gray-900 max-w-xl overflow-auto">
+                                                    <div class="text-sm text-left font-medium text-gray-900 max-w-xl overflow-hidden">
                                                         ${product.nameProduct}
                                                     </div>
                                                 </td>
