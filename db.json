@@ -400,7 +400,7 @@
       "addressUser": "Tay Son",
       "emailUser": "quangvinh778891@gmail.com",
       "total": 3879,
-      "status": 0,
+      "status": 1,
       "products": [
         {
           "nameProduct": "Xbox Series S",
@@ -434,6 +434,112 @@
         }
       ],
       "id": 5
+    },
+    {
+      "userId": 1,
+      "nameUser": "admin",
+      "numberPhone": "09w0q9ew0qw9e",
+      "addressUser": "ha noi",
+      "emailUser": "dinhlcph18273@fpt.edu.vn",
+      "total": 4000,
+      "status": 0,
+      "products": [
+        {
+          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
+          "priceProduct": 4000,
+          "quantityProduct": "45",
+          "nameCategory": "2",
+          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
+          "id": 2,
+          "quantity": 1
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "nameUser": "le Dinh",
+      "numberPhone": "0391821",
+      "addressUser": "ha noi",
+      "emailUser": "dinhlcph18273@fpt.edu.vn",
+      "total": 4188,
+      "status": 0,
+      "products": [
+        {
+          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
+          "priceProduct": 4000,
+          "quantityProduct": "45",
+          "nameCategory": "2",
+          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
+          "id": 2,
+          "quantity": 1
+        },
+        {
+          "nameProduct": "Roku Ultra | Streaming Device HD/4K/HDR/Dolby Vision with Dolby Atmos, Bluetooth",
+          "priceProduct": 99,
+          "quantityProduct": "40",
+          "nameCategory": "1",
+          "descProduct": "Outrageously powerful: Enjoy a lightning-fast interface and channels like Sling, Hulu, Netflix, and Prime Video that launch in a snap on the fastest, most powerful Roku player ever\nOur best Wi-Fi: Enjoy fast, smooth TV streaming in any room in the house with our best Wi-Fi or choose to wire up over Ethernet\nCinematic streaming: Roku Ultra is the centerpiece of your home theater with spectacular 4K and Dolby Vision picture plus immersive Dolby Atmos sound\nFind your lost remote: Simply press the button on your streaming device and your Roku remote will play a sound\nNo more juggling remotes: Power up your TV, adjust the volume, and control your streaming device with one Roku voice remote",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383868/images/i2o0c94wkxahh4cvvllj.jpg",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Sennheiser HD 350BT Bluetooth 5.0 Wireless Headphone ",
+          "priceProduct": 89,
+          "quantityProduct": "33",
+          "nameCategory": "2",
+          "descProduct": "Bluetooth 5.0 technology for effortless, reliable connectivity including AAC and AptX Low Latency codec support\n30-hour battery life with USB-C fast charging\nIntuitive controls including Virtual Assistant button for Siri and Google Assistant\nSennheiser App support providing an equalizer, Podcast Mode and Firmware updates\nClassic Sennheiser minimalist design crafted from high-quality materials for outstanding durability\n",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383925/images/oseyymulxs42gm0jhftd.jpg",
+          "id": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "nameUser": "admin",
+      "numberPhone": "0391821",
+      "addressUser": "ha noi",
+      "emailUser": "dinhlcph18273@fpt.edu.vn",
+      "total": 4150,
+      "status": 0,
+      "products": [
+        {
+          "nameProduct": "LG OLED C1 Series 83” Alexa Built-in 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema, WiSA Ready, Gaming Mode (OLED83C1PUB, 2021)",
+          "priceProduct": 4000,
+          "quantityProduct": "45",
+          "nameCategory": "2",
+          "descProduct": "83\" OLED DISPLAY: Dive into action, adventure, and drama displayed across 8 million self-lit pixels on a bigger, bolder screen. The LG OLED award-winning TVs with perfect black, over a billion colors, and infinite contrast will have movie scenes jumping off the screen for viewing like no other.\nα9 GEN 4 AI PROCESSOR 4K: Picture and sound adjustment happen automatically with our best processor. The a9 Gen4 AI Processor 4K uses deep-learning algorithms to detect scenes and genres to make your content look its best no matter what or when you're watching.\nGAME OPTIMIZER: Game Optimizer gives you easier access to all your game settings, while the latest HDMI allows for fast gaming speeds. Plus, you'll get low input lag and fast response times with Auto Low-Latency Mode and HGiG.\nGOOGLE ASSISTANT & ALEXA BUILT IN: There’s no need for an extra device – just ask your TV for music, weather, news, your Amazon shopping list, and more. Plus, conveniently control your connected home and smart devices.\nHOME CINEMA EXPERIENCE: Get breathtaking picture and audio that makes you feel like you're in the action with Cinema HDR, Dolby Vision IQ & Dolby Atmos. See movies exactly how directors intended with Filmmaker Mode. And with built-in access to Netflix, Prime Video, Apple TV+, Disney+ and LG channels, your favorite content is at your fingertips.\nWiSA READY: Connecting high-fidelity speakers is easy – and wireless– with WiSA connectivity. Enjoy high-quality and immersive surround sound. Up to 5.1 Channel support.",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645409389/images/jtenxvkbhxmqxolaeo4n.jpg",
+          "id": 2,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Seagate Portable 2TB External Hard Drive Portable HDD",
+          "priceProduct": 61,
+          "quantityProduct": "44",
+          "nameCategory": "2",
+          "descProduct": "Easily store and access 2TB to content on the go with the Seagate Portable Drive, a USB external hard drive\nDesigned to work with Windows or Mac computers, this external hard drive makes backup a snap just drag and drop\nTo get set up, connect the portable hard drive to a computer for automatic recognition no software required\nThis USB drive provides plug and play simplicity with the included 18 inch USB 3.0 cable",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383727/images/ld5ipwombisxanksd72i.jpg",
+          "id": 5,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Sennheiser HD 350BT Bluetooth 5.0 Wireless Headphone ",
+          "priceProduct": 89,
+          "quantityProduct": "33",
+          "nameCategory": "2",
+          "descProduct": "Bluetooth 5.0 technology for effortless, reliable connectivity including AAC and AptX Low Latency codec support\n30-hour battery life with USB-C fast charging\nIntuitive controls including Virtual Assistant button for Siri and Google Assistant\nSennheiser App support providing an equalizer, Podcast Mode and Firmware updates\nClassic Sennheiser minimalist design crafted from high-quality materials for outstanding durability\n",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383925/images/oseyymulxs42gm0jhftd.jpg",
+          "id": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 8
     }
   ]
 }

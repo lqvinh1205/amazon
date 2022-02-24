@@ -1,5 +1,6 @@
 import toastr from "toastr";
 import $ from "jquery";
+import emailjs, { init } from "@emailjs/browser";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import Header from "../../../components/client/Header";
@@ -7,6 +8,8 @@ import Footer from "../../../components/client/Footer";
 import { getLocalStorage, reRender } from "../../../utils";
 import { decreaseQuantity, increaseQuatity, removeProduct } from "../../../utils/carts";
 import { add } from "../../../api/cart";
+
+init("user_hilxnivyt8WPlg8YXbyQe");
 
 // import "../../style.css";
 
@@ -177,7 +180,8 @@ const CartsPage = {
         `;
     },
     afterRender() {
-        Header.afterRender();
+        const data = getLocalStorage("cart") || [];
+
         $().ready(() => {
             $("#form-order").validate({
                 rules: {
@@ -246,8 +250,19 @@ const CartsPage = {
                     total: totalPrice,
                     status: 0,
                     products: JSON.parse(localStorage.getItem("cart")),
-                }).then(() => {
+                }).then(async () => {
                     toastr.success("Đặt hàng thành công");
+                    // eslint-disable-next-line no-unused-vars
+                    const response = await emailjs.send("service_6f1509l", "template_q60cbma", {
+                        to_name: document.getElementById("nameUser").value,
+                        message: `
+                        Bạn có 1 đơn hàng bao gồm:
+                        ${data.map((item) => `${item.nameProduct}`).join("")}
+                        `,
+                        emai_user: document.getElementById("emailUser").value,
+                        reply_to: "vinhlqph18160@fpt.edu.vn",
+                    });
+
                     localStorage.removeItem("cart");
                     document.location.href = "/#/orders";
                 });
