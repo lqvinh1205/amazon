@@ -540,6 +540,38 @@
         }
       ],
       "id": 8
+    },
+    {
+      "userId": 1,
+      "nameUser": "admin",
+      "numberPhone": "",
+      "addressUser": "",
+      "emailUser": "quangvinh778891@gmail.com",
+      "total": 2989,
+      "status": 0,
+      "products": [
+        {
+          "nameProduct": "Xbox Series S",
+          "priceProduct": 2900,
+          "quantityProduct": "99",
+          "nameCategory": "1",
+          "descProduct": "Access your favorite entertainment through apps like YouTube, Netflix, and more\nEnjoy over 100 games right out of the box with a 1 month Xbox Game Pass trial\nWatch 4K Blu-ray movies and stream 4K video on Netflix, Amazon, Hulu, Microsoft Movies & TV, and more\nPlay with friends and family near and far—sitting together on the sofa or around the world on Xbox Live, the fastest, most reliable gaming network\nXbox 1 games and accessories work together",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645365881/images/l3fpmpxoirvrilyc6pae.jpg",
+          "id": 1,
+          "quantity": 1
+        },
+        {
+          "nameProduct": " Sennheiser HD 350BT Bluetooth 5.0 Wireless Headphone ",
+          "priceProduct": 89,
+          "quantityProduct": "33",
+          "nameCategory": "2",
+          "descProduct": "Bluetooth 5.0 technology for effortless, reliable connectivity including AAC and AptX Low Latency codec support\n30-hour battery life with USB-C fast charging\nIntuitive controls including Virtual Assistant button for Siri and Google Assistant\nSennheiser App support providing an equalizer, Podcast Mode and Firmware updates\nClassic Sennheiser minimalist design crafted from high-quality materials for outstanding durability\n",
+          "img": "http://res.cloudinary.com/dzroyn2i4/image/upload/v1645383925/images/oseyymulxs42gm0jhftd.jpg",
+          "id": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 9
     }
   ]
 }
